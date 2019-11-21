@@ -1,0 +1,140 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+body {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: white;
+
+}
+
+.Begin img#right
+{
+    position: relative;
+    width: 195px;
+    height: 195px;
+    float: right;
+    margin-top: -60px;
+    margin-right: 15px;
+}
+
+html,
+body{
+ height: 100%;
+}
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.main-menu-container {
+    display: flex;
+    min-height: 40em;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.main-menu-btn {
+    font-family: Roboto;
+    width: 200px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 5px;
+    color: black;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 20px 2px;
+    cursor: pointer;
+}
+
+.main-menu-list {
+    list-style-type: none;
+}
+
+.board-partial {
+    margin: 50px;
+}
+
+.li-spacer {
+    height:340px;
+    width: 420px;
+}
+
+.li-horizontal {
+    float: left;
+    position: absolute;
+    margin: 0 0 0 45px;
+}
+
+.horizontal-spacer {
+    margin: 0 45px 0 0;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.Button-lower-Right {
+    position: relative;
+    width: 95px;
+    height: 95px;
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+}
+
+.Button-lower-Left {
+    position: relative;
+    width: 95px;
+    height: 95px;
+    float: left;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.image {
+    position: relative;
+    width: 145px;
+    height: 145px;
+    float: right;
+    margin-top: 5px;
+    margin-right: 50px;
+}
+
+.image-titel {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    color: #E6DE20;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}

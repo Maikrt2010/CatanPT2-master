@@ -1,0 +1,30 @@
+﻿<body>
+    <div class="image">
+        <img src="images/Banner.png">
+        <h2 class="image-titel">Board Generator</h2>
+    </div>
+    <div class="main-menu-container" lang="en">
+        <ul class="main-menu-list">
+            <li>
+                <div>
+                    <button onclick="darker()" type="button" class="main-menu-btn"><p class="lang" key="DarkMode"></p></button>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <button onclick="Changelanguage()" type="button" class="main-menu-btn"><p class="lang" key="Languages"></p></button>
+                </div>
+            </li>
+        </ul>
+
+
+    </div>
+    <div class="footer">
+        <div class="Button-lower-Left">
+            @using (Html.BeginForm("index", "Home"))
+            {
+                <input type="image" src="images/Return.png" />
+            }
+        </div>
+    </div>
+</body>

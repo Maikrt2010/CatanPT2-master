@@ -1,0 +1,46 @@
+﻿<body>
+
+
+<p></p>
+<div class="image">
+    <img src="images/Banner.png">
+    <h2 class="image-titel">Board Generator</h2>
+</div>
+<div class="main-menu-container">
+    <ul class="main-menu-list">
+        <li>
+            <div>
+                @using (Html.BeginForm("index", "Settings"))
+                {
+                    <button type="submit" class="main-menu-btn"><p class="lang" key="Generateboard"></p></button>
+                                                                
+                }
+            </div>
+        </li>
+        <li>
+            <div>
+                @using (Html.BeginForm("BoardTest", "Board"))
+                {
+                    <button type="submit" class="main-menu-btn">SmallBoard Test</button>
+                }
+            </div>
+        </li>
+        <li>
+            <div>
+                @using (Html.BeginForm("BoardDisplay", "Board"))
+                {
+                    <button type="submit" class="main-menu-btn">Test Page</button>
+                }
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="Button-lower-Right">
+        @using (Html.BeginForm("index", "Options"))
+        {
+            <input type="image" src="images/Gear.png"/>
+        }
+    </div>
+</div>
+</body> 

@@ -1,0 +1,48 @@
+﻿
+    <div class="board-partial">
+        <partial name="Partial/_SmallBoard.cshtml" />
+    </div>
+    <ul class="main-menu-list">
+        <li>
+            <div>
+                 <button type="submit" class="main-menu-btn">Save as Image</button>
+            </div>
+        </li>
+        <li>
+            <div>
+                  <button type="submit" class="main-menu-btn">Save in Library</button>
+            </div>
+        </li>
+        <li>
+            <div class="li-spacer"/>
+        </li>
+        <li>
+            <div>
+                @using (Html.BeginForm("Index", "Home"))
+                {
+                    <button type="submit" class="main-menu-btn">Main Menu</button>
+                }
+            </div>
+        </li>
+    </ul>
+
+    <div>
+        <ul class="main-menu-list">
+            <li class="li-horizontal">
+                <div>
+                      <button onClick="GoToSettings()" type="submit" class="main-menu-btn horizontal-spacer">Generate New Settings</button>
+                      <button onClick="Refresh()" type="submit" class="main-menu-btn">Generate Same Settings</button>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+<script>
+    function Refresh() {
+  window.location.reload();
+
+    }
+    function GoToSettings() {
+        window.location = '../Settings';
+    }
+</script>

@@ -1,0 +1,53 @@
+﻿@model Settingsmodel
+<head>
+    <link href="~/css/Settings.css" rel="stylesheet" type="text/css" />
+</head>
+<title>Generator Settings</title>
+<h1 class="gentitle">
+    Generator Settings
+</h1>
+@using (Html.BeginForm("SetSettings", "Settings", FormMethod.Post))
+{
+<form action="" method="post" class="form-inline vertical-center">
+    <div class="container text-center">
+        <div class="options">
+            <input class="btn btn-primary btn-lg no-padding submitbutton" type="submit" id="submit-btn" value="Create" onclick='@Url.Action("Setsettings","SetSetting")' ; />
+            <div class="row align-items-center">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-2"><label class="checkdesc">Random</label></div>
+                <div class="col-xs-2"><label class="checkdesc">Fixed</label></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xs-6"><label class="label" for="TilePlacement">Tile Placement</label></div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.TileIsRandom, true, new { id = "BigRadio" })</div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.TileIsRandom, false, new { id = "BigRadio" })</div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-2"><label class="checkdesc">Random</label></div>
+                <div class="col-xs-2"><label class="checkdesc">Fixed</label></div>
+                <div class="col-xs-2"><label class="checkdesc">Psuedo</label></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xs-6"><label class="label" for="ChipPlacement">Chip Placement</label></div>
+                <div class="col-xs-2"><div class="checkbox-size">@Html.RadioButtonFor(m => m.ChipState, 0, new { id = "BigRadio" })</div></div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.ChipState, 1, new { id = "BigRadio" })</div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.ChipState, 2, new { id = "BigRadio" })</div>
+                <br />
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xs-6"></div>
+                <div class="col-xs-2"><label class="checkdesc">3 - 4</label></div>
+                <div class="col-xs-2"><label class="checkdesc">5 - 6</label></div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-xs-6"><label class="label" for="NumberofPlayers">Number of Players</label></div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.IsSmallBoard, true, new { id = "BigRadio" })</div>
+                <div class="col-xs-2">@Html.RadioButtonFor(m => m.IsSmallBoard, false, new { id = "BigRadio" })</div>
+                <br />
+            </div>
+        </div>
+    </div>
+
+</form>
+}
